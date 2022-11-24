@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 60px;
+    height: 40px;
+    margin-top: 15%;
+    background-color: #224af8;
+    border-radius: 5px;
+    animation-name: vertical;
+    animation-duration: 4s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+}
+
+
+
+.css{
+    padding: 5px;
+    padding-left: 13px;
+    color: #fff;
+}
+
+@keyframes vertical{
+    25%{
+    
+        transform: rotate(35deg);
+    }
+    50%{
+        transform: translateX(300px) rotate(0);
+        background-color: #00ffff;
+    }
+    75%{
+       
+        transform: translateX(300px) rotate(0);
+        background-color: #00ffff;
+        
+    }
+    100%{
+        transform: translateX(0) rotate(-360deg);
+    }
+}
